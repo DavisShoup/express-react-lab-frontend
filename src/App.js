@@ -19,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="main">
       <Header />
       <Route exact path="/">
         <Home />
@@ -29,6 +30,7 @@ function App() {
       <Route path="/projects">
         <Projects URL={URL}/>
       </Route>
+      </div>
       <Footer />
     </div>
   );

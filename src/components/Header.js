@@ -3,16 +3,16 @@ import { Link } from "react-router-dom"
 const Header = (props) => {
     return (
       <header>
-        <h1>My Portfolio Page</h1>
+        <h1 className="portfolio" >My Portfolio Page</h1>
         <nav className="nav">
           <Link to="/">
-            <div>HOME</div>
+            <div className="link">HOME</div>
           </Link>
           <Link to="/about">
-            <div>ABOUT</div>
+            <div className="link">ABOUT</div>
           </Link>
           <Link to="/projects">
-            <div>PROJECTS</div>
+            <div className="link">PROJECTS</div>
           </Link>
         </nav>
       </header>

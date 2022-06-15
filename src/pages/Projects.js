@@ -14,14 +14,14 @@ const Projects = (props) => {
     const loaded = () => {
         console.log(projects)
         return projects.map(project => (
-            <div>
-                <h1>{project.name}</h1>
+            <div className="project-div">
+                <h1 className="project-name">{project.name}</h1>
                 <img className="project-image" src={project.image} alt={project.name}/>
                 <a href={project.git}>
-                    <button>Github</button>
+                    <button className="button">Github</button>
                 </a>
                 <a href={project.live}>
-                    <button>Live site</button>
+                    <button className="button">Live site</button>
                 </a>
             </div>
         ));
