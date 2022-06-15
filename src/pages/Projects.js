@@ -9,7 +9,7 @@ const Projects = (props) => {
     };
     useEffect(() => {
     getProjectsData();
-    }, []);
+    });
 
     const loaded = () => {
         console.log(projects)
